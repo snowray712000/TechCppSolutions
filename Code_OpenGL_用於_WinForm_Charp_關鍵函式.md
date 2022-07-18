@@ -86,7 +86,9 @@ void initOpenGL(System::Windows::Forms::Control^ canvasOfGLRender) {
 		printf("OpenGL version %s\n", version);
 	}
 }
-
+```
+### samples
+```cpp=
 // 範例: 使用時
 // Panel 要設為 Opaque，不然會閃爍。 (但卻要用建構子才能使用下面這行)
 // SetStyle(ControlStyles.Opaque, true);
