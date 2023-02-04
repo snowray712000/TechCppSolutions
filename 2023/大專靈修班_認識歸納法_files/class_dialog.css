@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+/*===== Overlay =====*/
+
+/* .browser_overlay { */
+.class_dialog_overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    z-index: 10000000001;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.1);
+}
+  
+.class_dialog_overlay .d_overlay_content {
+    /* position: relative; */
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: auto;
+    min-height: 180px;
+    max-height: 60%;
+    margin: 30px auto;
+    background-color: #fff;
+    letter-spacing: normal;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px 0;
+    box-shadow: 5px 5px 20px 10px #bebebe;
+}
+
+.class_dialog_overlay .d_overlay_msg_icon_row {
+	display: block;
+	width: 100%;
+	text-align: center;
+	/* padding-top: 20px; */
+	/* margin-bottom: 10px; */
+} 
+.class_dialog_overlay .d_overlay_msg_icon_row .ds_font {
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #47AFC3;
+  margin: 0;
+}
+.class_dialog_overlay .d_overlay_msg_icon_row .ds_font.ds_orange {
+  color: #F38228;
+  margin: 0;
+}
+
+.class_dialog_overlay .d_overlay_msg_icon_row .ds_font.ds_pink {
+  color: rgba(255, 136, 136,0.6);
+  margin: 0;
+}
+
+.class_dialog_overlay .d_overlay_msg_icon_row .ds_font.ds_gray {
+  color: rgb(133, 145,146, 0.7);
+  margin: 0;
+}
+  
+  
+.class_dialog_overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+	.class_dialog_overlay a {
+		font-size: 20px
+	}
+    .class_dialog_overlay .closebtn {
+	    font-size: 40px;
+	    top: 15px;
+	    right: 35px;
+    }
+}
+
+.class_dialog_overlay .d_overlay_top{
+    display: block;
+    width: 100%;
+    padding: 15px 5% 5px 5%;
+    border-bottom: 1px solid #efefef;
+}
+
+
+.class_dialog_overlay .d_overlay_title{
+    display: block;
+    color: #777;
+    font-size: 0.9em;
+    /*float: left;*/
+    text-align: left;
+    word-wrap: break-word;
+}
+
+
+.class_dialog_overlay .prompt_p{
+    width: 90%;
+    height: 45px;
+    border: #e0e0e0 1px solid;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    line-height: 1.6;
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.class_dialog_overlay .d_confirm_p{
+    width: 100%;
+    /* padding: 20px; */
+    /* line-height: 1.6; */
+    color: #666;
+    /* text-align: justify; */
+    text-align: center;
+    padding: 25px 20px 20px 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1.8rem;
+}
+.class_dialog_overlay input{
+    border: none;
+    -webkit-appearance: none;
+}
+.class_dialog_overlay .dialog_button_block{
+    /* position: absolute;
+    bottom: 25px;
+    right: 0; */
+    position: relative;
+    padding: 20px 5% ;
+	/* margin-bottom: 20px; */
+}
+
+.class_dialog_overlay .d_overlay_content .d_window_button{
+    border: 1px solid #999;
+    color: #999;
+    font-size: 0.8em;
+    padding: 7px 20px;
+    border-radius: 10px;
+    margin-left: 12px;
+}
+.class_dialog_overlay .d_overlay_content .d_window_button:hover{
+    cursor: pointer;
+    /* background-color: #999; */
+    /* color: #fff; */
+}
+.class_dialog_overlay .d_overlay_content .d_button_close {
+    /* font-size: 1.05rem; */
+    font-size: 1rem;
+    cursor: pointer;
+    color: #0e5d71;
+    background-color: transparent;
+    border: 2px solid #0e5d71;
+    box-shadow: 3px 3px 10px #999;
+}
+.class_dialog_overlay .d_overlay_content .d_button_close:hover {
+    color: #FFFFFF;
+  	background-color: #0e5d71;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.class_dialog_overlay .d_overlay_content .d_button_cancel {
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #0e5d71;
+    border: 2px solid #0e5d71; 
+    color: #ffffff;
+    cursor: pointer; 
+    box-shadow: 3px 3px 10px #777;
+}
+.class_dialog_overlay .d_overlay_content .d_button_cancel:hover {
+	color: #0e5d71;
+  	background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: none;
+    transition-duration: 0.4s;
+}
+.class_dialog_overlay .d_overlay_content .d_button_confirm {
+	font-size: 1rem;
+    cursor: pointer;
+    color: #0e5d71;
+    background-color: #ffffff;
+    border: 2px solid #0e5d71;  
+    box-shadow: 3px 3px 10px #dcdcdc;
+}
+.class_dialog_overlay .d_overlay_content .d_button_confirm:hover {
+    cursor: pointer;
+    box-shadow: none;
+    transition-duration: 0.4s;
+}
+.class_dialog_overlay .d_overlay_content .d_button_action {
+	margin-left: 0;
+	margin-right: 15px;
+	/* font-size: 1.05rem; */
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(71, 175, 195);
+    background-color: transparent;
+    border: 2px solid rgb(71, 175, 195);
+}
+.class_dialog_overlay .d_overlay_content .d_button_action:hover {
+    color: #FFFFFF;
+  	background-color: rgb(71, 175, 195);
+}
+.class_dialog_overlay .d_overlay_content .d_button_action span {
+	/* line-height: 1.8rem; */
+}
+/* .browser_overlay .d_overlay_content .d_button_action .material-icons{
+	font-size: 1.05rem;
+    vertical-align: top;
+    line-height: 1.8rem;	
+} */
+.class_dialog_overlay .d_overlay_content .d_button_action .font_icon_p {
+	font-size: 1.05rem;
+    vertical-align: text-top;
+    /* line-height: 1.8rem;	 */
+    color: rgb(71, 175, 195);
+    margin-right: 2px;
+}
+/* .browser_overlay .d_overlay_content .d_button_action:hover .font_icon_p { */
+.class_dialog_overlay .d_overlay_content .d_button_action:hover span {
+    color: #FFFFFF;
+}
+
+.class_dialog_overlay a.act_link_p {
+	text-decoration: none;
+} 
+.class_dialog_overlay a.act_link_p:link, .class_dialog_overlay a.act_link_p:active, .class_dialog_overlay a.act_link_p:visited {
+	text-decoration: none;
+}
+
+/* --平板版型------------------------------------- */
+@media screen and (min-width:768px) and (max-width: 991.99px) {
+	.class_dialog_overlay .d_overlay_content {
+    	max-width: 75%;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -70%);
+    }
+	
+	.class_dialog_overlay .d_confirm_p{
+	    font-size: 1.1rem;
+	    line-height: 1.7rem;
+	}
+	
+	.class_dialog_overlay .d_overlay_content .d_button_close {
+	    font-size: 0.9rem;
+	}
+	.class_dialog_overlay .d_overlay_content .d_button_cancel {
+	    font-size: 0.9rem;
+	}
+	.class_dialog_overlay .d_overlay_content .d_button_confirm {
+	    font-size: 0.9rem;
+	}
+	.class_dialog_overlay .d_overlay_content .d_button_action {
+	    font-size: 0.9rem;
+	}
+}	
+
+
+/* --手機版型------------------------------------- */
+@media screen and (max-width: 767px) {
+
+	/* 讓 padding 與 width 解除關係 */
+	/* {
+		box-sizing :border-box; 	
+	} */
+
+	/* iPhone 旋轉後 文字不要放大 */
+	/* html,body{
+		-webkit-text-size-adjust:none; 	
+    } */
+    
+  	/*===== Overlay =====*/
+  
+	.class_dialog_overlay .d_overlay_content {
+    	width: 85%;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -75%);
+    }
+    
+    .class_dialog_overlay .d_confirm_p{
+	    font-size: 1.1rem;
+	    line-height: 1.7rem;
+	}
+	
+	.class_dialog_overlay .d_overlay_content .d_button_close {
+	    font-size: 0.9rem;
+	}
+	.class_dialog_overlay .d_overlay_content .d_button_cancel {
+	    font-size: 0.9rem;
+	}
+	.class_dialog_overlay .d_overlay_content .d_button_confirm {
+	    font-size: 0.9rem;
+	}
+	.class_dialog_overlay .d_overlay_content .d_button_action {
+	    font-size: 0.9rem;
+	}
+
+}

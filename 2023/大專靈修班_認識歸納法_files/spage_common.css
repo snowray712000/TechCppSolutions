@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+/* base/reset css --start */
+* {
+	box-sizing: border-box;
+	-wekit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	/* options */
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font-size: 16px;
+	color: #444;
+	line-height: 1.6;
+	/* font-family: 'Noto Sans TC', "Heiti TC", "Microsoft JhengHei", sans-serif; */
+	font-family: arial,"Microsoft JhengHei","微軟正黑體", sans-serif;
+	-webkit-text-size-adjust: none;
+	image-rendering: -webkit-optimize-contrast;
+}
+
+/* base/reset css --end */
+
+.all_content {
+	width: 100%;
+	background-color: #FFF;
+}
+
+.page_content_block {
+	width: 100%;
+	background-color: #FFF;	 
+	/*background-color: #e0e0e0;*/
+}
+
+
+/* footer block */
+
+.from_app .bible_16_footer {
+	display: none;
+}

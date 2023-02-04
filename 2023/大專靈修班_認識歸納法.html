@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>大專靈修班</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<!-- template/bible/16/spage_base.html -->
+<!--網址圖示-->
+<!-- Favicon and touch icons -->
+<link type="image/x-icon" href="https://www.cef.tw/cefcamp/images/bible/16/logo_tab.png" rel="icon">
+<link type="image/x-icon" href="https://www.cef.tw/cefcamp/images/bible/16/logo_tab.png" rel="shortcut icon">
+<link type="image/x-icon" href="https://www.cef.tw/cefcamp/images/bible/16/logo_tab.png" rel="bookmark">
+
+<!-- Favicon for Chrome -->
+<link rel="icon" type="image/png" sizes="192x192" href="https://www.cef.tw/cefcamp/images/bible/16/logo_tab.png">
+
+<!-- Favicon for Safari Web Clips-->
+<link rel="apple-touch-icon-precomposed" href="https://www.cef.tw/cefcamp/images/bible/16/logo_tab.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.cef.tw/cefcamp/images/bible/16/logo_tab.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.cef.tw/cefcamp/images/bible/16/logo_tab.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.cef.tw/cefcamp/images/bible/16/logo_tab.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.cef.tw/cefcamp/images/bible/16/logo_tab.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.cef.tw/cefcamp/images/bible/16/logo_tab.png">
+
+<!-- Favicon for Win10 Edge -->
+<meta name="msapplication-TileImage" content="/cefcamp/images/bible/16/logo_tab.png">
+<meta name="msapplication-TileColor" content="#226533">
+
+
+<script src="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/jquery.min.js"></script>
+<script src="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/camp_common_v2.js"></script>
+<script src="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/camp_app_v2.js"></script>
+<script src="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/class_dialog.js"></script><script src="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/layer_dialog.js"></script>
+
+<script>
+$(function() {
+
+if( !$("body").hasClass("login_switch") ){
+    $("body").addClass("login_switch");
+}
+
+    
+});
+</script>
+<link rel="stylesheet" href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/mi_introduce_page.css" type="text/css"><link rel="stylesheet" href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/ckeditor_utils.css">
+
+<!-- ckeditor front end css (ex:custom rwd plugins css) -->
+<link rel="stylesheet" href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/rwdimage.css">
+<link rel="stylesheet" href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/rwdyoutube.css">
+<link rel="stylesheet" href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/rwdtablebox.css">
+<link rel="stylesheet" href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/ckeditor_custom.css">
+	       
+<link rel="stylesheet" href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/bible_app_head_n_menu_v2.css">
+<link rel="stylesheet" href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/font-awesome.min.css">
+<link href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/css_002.css" rel="stylesheet">
+<link rel="stylesheet" href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/class_dialog.css"><link rel="stylesheet" href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/browser_window.css">
+<script>var app_switch = false;</script><script>
+var user_camp_identity = 67
+</script><script>
+
+$(document).ready(function() {
+	
+});
+</script>
+
+
+<!-- Google Font -->
+<link href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/css.css" rel="stylesheet">
+
+<!-- CSS 引用 -->
+<link rel="stylesheet" href="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/spage_common.css">
+<!-- 
+<link rel="stylesheet" href="/cefcamp/css/ymc/15/15ymc_footer.css?20211206">-->
+
+<!-- Eletter -->
+<!--  <script type="text/javascript" src="/javascript/eletter.js"></script>-->
+
+<style>
+/* CSS Document */
+/* ---reset.css--- */
+/*
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	-webkit-text-size-adjust:none;
+	image-rendering: -webkit-optimize-contrast;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font-size: 16px;
+	color: #000000;
+	background-color: #FFFFFF;
+	line-height: 1rem;
+	text-decoration: none;
+	font-family: arial,"Microsoft JhengHei","微軟正黑體", sans-serif;
+}*/
+
+
+</style>
+
+<script>
+
+$(function(){
+	if( $(".from_app").length > 0 ){
+		if( location.hash.length > 0 ){
+			var anchor_target_selector = location.hash.split("&")[0];
+			if( $(anchor_target_selector).length > 0 ){
+				/*let alert_text = "scroll "+location.hash+" test";
+				let cmd = "";
+				class_dialog.layerAlertExecute(alert_text, cmd);
+				*/
+				$("html, body").animate({ scrollTop: ($(anchor_target_selector).offset().top -0) }, 700);
+			}
+		}
+	}
+
+});
+
+function syncTest(){
+	let alert_text = "syncTest";
+	let cmd = "";
+	class_dialog.layerAlertExecute(alert_text, cmd);
+}
+
+</script>
+
+</head>
+
+<body class="login_switch">
+	
+<div class="all_content" id="top">
+
+	<header id="p_header_block" class="header_block app_switch " data-campid="16" data-camp="biblecamp"><div class="nav_block"><div class="logo_block"><a href="https://www.cef.tw/cefcamp/camp_main.php?camp=biblecamp&amp;camp_id=16"><img class="logo_icon_dt" src="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/h_logo_dt.png" alt="大專靈修班"><img class="logo_icon_m" src="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/h_logo.png" alt="大專靈修班"></a></div><div class="menu_block"><ul class="menu_list_dt"><li class="dropdown"><a class="dropbtn" href="javascript:void(0)">關於大靈班</a><div class="dropdown-content"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=670&amp;menu_id=347">營會宗旨</a><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=670_id=656&amp;menu_id=348#camp_content">營會介紹</a><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=663&amp;menu_id=366">FAQ</a><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=673&amp;menu_id=433">住宿相關</a></div></li><li class="dropdown"><a class="dropbtn" href="javascript:void(0)">關心大靈班</a><div class="dropdown-content"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=657&amp;menu_id=350">支持與代禱</a><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=661&amp;menu_id=351"> 營會推廣</a></div></li><li class="dropdown"><a class="dropbtn" href="javascript:void(0)">認識歸納法</a><div class="dropdown-content"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=674&amp;menu_id=368">歸納法介紹</a><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=672&amp;menu_id=369">歸納法影片</a></div></li><li class="dropdown"><a class="dropbtn" href="javascript:void(0)">大靈節目</a><div class="dropdown-content"><a href="https://www.cef.tw/cefcamp/files/16bible/program_list_mobile_08.png?menu_id=413">節目表</a><a href="https://www.cef.tw/cefcamp/camp_class_day_schedule.php?camp_id=16&amp;menu_id=432">大靈會場</a></div></li><li class="dropdown"><a class="dropbtn" href="https://www.cef.tw/cefcamp/user_profile.php?camp_id=16&amp;menu_id=364">個人頁面</a></li><li class="dropdown"><a class="dropbtn" href="javascript:void(0)">大靈之後</a><div class="dropdown-content"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=694&amp;menu_id=417">機會與行動</a><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=697&amp;menu_id=418">讀經計劃</a><a href="https://www.cef.tw/cefcamp/post_action_main.php?camp_id=16&amp;menu_id=415">大靈心得分享平台</a></div></li></ul><div class="menu_list_m"><div id="p_menu_login_block" class="login_menu_block"></div><img id="slide_menu" class="menu_icon" src="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/camp_menu_icon.png" alt="三" onclick="slideCampMenu()"></div></div></div></header><nav id="p_slide_menu_block" class="slide_menu_block "><ul class="slide_menu_area"><li class="menu_item"><a href="https://www.cef.tw/cefcamp/camp_main.php?camp=biblecamp&amp;camp_id=16">首頁</a></li><li class="menu_item"><a onclick="toggleSildeSubMenu(346)">關於大靈班</a><span class="fa fa-caret-down menu_toggle_icon" onclick="toggleSildeSubMenu(346)"></span><ul id="p_sub_menu_list_346" class="sub_menu_list"><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=670&amp;menu_id=347">營會宗旨</a></li><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=670_id=656&amp;menu_id=348#camp_content">營會介紹</a></li><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=663&amp;menu_id=366">FAQ</a></li><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=673&amp;menu_id=433">住宿相關</a></li></ul></li><li class="menu_item"><a onclick="toggleSildeSubMenu(349)">關心大靈班</a><span class="fa fa-caret-down menu_toggle_icon" onclick="toggleSildeSubMenu(349)"></span><ul id="p_sub_menu_list_349" class="sub_menu_list"><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=657&amp;menu_id=350">支持與代禱</a></li><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=661&amp;menu_id=351"> 營會推廣</a></li></ul></li><li class="menu_item"><a onclick="toggleSildeSubMenu(367)">認識歸納法</a><span class="fa fa-caret-down menu_toggle_icon" onclick="toggleSildeSubMenu(367)"></span><ul id="p_sub_menu_list_367" class="sub_menu_list"><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=674&amp;menu_id=368">歸納法介紹</a></li><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=672&amp;menu_id=369">歸納法影片</a></li></ul></li><li class="menu_item"><a onclick="toggleSildeSubMenu(412)">大靈節目</a><span class="fa fa-caret-down menu_toggle_icon" onclick="toggleSildeSubMenu(412)"></span><ul id="p_sub_menu_list_412" class="sub_menu_list"><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/files/16bible/program_list_mobile_08.png?menu_id=413">節目表</a></li><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/camp_class_day_schedule.php?camp_id=16&amp;menu_id=432">大靈會場</a></li></ul></li><li class="menu_item"><a href="https://www.cef.tw/cefcamp/user_profile.php?camp_id=16&amp;menu_id=364">個人頁面</a></li><li class="menu_item"><a onclick="toggleSildeSubMenu(414)">大靈之後</a><span class="fa fa-caret-down menu_toggle_icon" onclick="toggleSildeSubMenu(414)"></span><ul id="p_sub_menu_list_414" class="sub_menu_list"><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=694&amp;menu_id=417">機會與行動</a></li><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=697&amp;menu_id=418">讀經計劃</a></li><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/post_action_main.php?camp_id=16&amp;menu_id=415">大靈心得分享平台</a></li></ul></li><li class="menu_item"><a onclick="toggleSildeSubMenu(416)">輔導同工專區</a><span class="fa fa-caret-down menu_toggle_icon" onclick="toggleSildeSubMenu(416)"></span><ul id="p_sub_menu_list_416" class="sub_menu_list"><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/files/16bible/2023%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD%E8%BC%94%E5%B0%8E%E8%B5%B4%E6%9C%83%E9%80%9A%E7%9F%A5.pdf?menu_id=421">輔導赴會通知</a></li><li class="sub_menu_item"><a href="https://www.cef.tw/cefcamp/send_feedback.php?camp_id=16&amp;type=teamleader&amp;menu_id=422">小組代禱與小組名單</a></li></ul></li><li class="menu_item"><a href="https://www.cef.tw/cefcamp/camp_list.php?camp=biblecamp">選擇營會梯次</a></li><li class="menu_item"><a href="https://www.cef.tw/cefcamp/logout.php?camp=biblecamp&amp;logout=1">登出</a></li></ul></nav><div id="p_slide_notice_block" class="slide_menu_block_cover"><div class="slide_notice_block "><div class="notice_function_block"><div class="set_all_notice_readed" onclick="setCampNoticeAllReaded(16)">全部標示已讀</div></div><ul class="notice_list"><li class="notice_item p_notice_data_sample" style="display: none;"><a href="" class="notice_link"><div class="notice_row_block"><div class="notice_title_row"><div class="notice_title_area"><div class="notice_dot unread"></div><div class="notice_title">通知</div></div><div class="notice_time"></div></div><div class="notice_brief">通知...</div></div></a></li></ul><button class="notice_more_btn" onclick='location.href="/cefcamp/notice_main.php?camp_id=16";'>查看更多</button></div></div><div class="header_space app_switch">&nbsp;</div>
+	
+<div class="page_content_block">
+	<div class="login_switch"><div class="title_block title_01">
+		歸納式研經是什麼
+	</div>
+		
+	<div class="text_basic">
+		    要真正達到神啟示聖經的目的，除了態度認真，以及有一定的熟悉度之外，也要用合宜的方法讀經。<br>
+    歸納式研經法（Inductive Bible Study），簡稱為 
+IBS，是從聖經著手，取材於聖經，透過「觀察」(Observation)、「解釋」(Interpretation)的步驟，歸納出聖經真理的原則
+後，找出對應現在處境之「應用」(Application)。
+ 		<div class="brief_block_container">
+ 			<div class="brief_block">
+ 				1. 經文說了什麼？ <br>
+<span class="font_weight_heavy">觀察</span>：What does it say? 
+ 			</div>
+ 			<div class="brief_block">
+ 				2. 經文的意思是什麼？ <br>
+<span class="font_weight_heavy">解釋</span>：What does it mean? 
+
+ 			</div>
+ 			<div class="brief_block">
+ 				3. 經文怎麼應用？ <br>
+<span class="font_weight_heavy">應用</span>：What does it mean to me?
+
+ 			</div>
+ 		</div>
+   在學習如何觀察、解釋、應用之前，對聖經特性的認識相當重要。除非我們瞭解聖經的特性， 我們才能正確掌握要觀察什麼？如何觀察？如何解釋？該應用什麼？如何應用？
+
+	</div>
+
+
+	<div class="title_block title_02">
+		聖經有何特性
+	</div>
+
+	<div class="text_basic">
+		<div class="title_second">
+			一、同具永恆性與歷史性
+		</div>
+		1. 永恆性──聖經是神的話（道），因此具有永恆性，不受時空限制，適用於每個時代、每種文化的人類。<br>
+2. 歷史性──聖經是神在人類歷史中，透過人類的語言，向人類說話。所以聖經的每一卷書， 都有其歷史性，且受當時的語言與文化...... 等條件的限制。
+<br><br>
+   而「歸納式研經法」就是希望能夠在這些限制中，透過觀察、解釋的步驟，歸納出經文的原意， 明白神啟示的永恆真理，並找出在現今實踐真理的方式。
+
+	<div class="title_second">
+			二、包含多種文體
+		</div>
+		   新舊約經卷共有66 卷，寫作者、寫作時間、寫作方式各有不同。不同的文體（文學體裁）， 在觀察和解釋上，也要按其文體特點來處理。一般來說，聖經文體分作五類── <br>
+1. 論述文<br>
+2. 敘事文<br>
+3. 詩歌<br>
+4. 比喻<br>
+5. 啟示文學
+
+
+	</div>
+
+	<div class="title_block title_03">
+		歸納式研經法的注意事項
+	</div>
+
+	<div class="text_basic">
+		基於以上兩種特性，歸納式研經法認為研經時應該考慮以下幾個項目： <br>
+1. 時代背景：文化、宗教、政治、經濟、社會、史地等<br>
+2. 作者背景：個人生平、性格特質、寫作原因、當時心情等<br>
+3. 讀者背景：所處特殊環境、信仰狀況等<br>
+4. 寫作時地<br>
+5. 文學體裁、寫作情境<br>
+6. 經文結構思路<br>
+7. 所用語文的文法及字義
+
+	</div>
+
+	<div class="title_block title_04">
+		步驟一：觀察
+	</div>
+
+	<div class="text_basic">
+		無論哪種文體，觀察的重點通常都以「主題」、「大意」、「分段大綱」來呈現。<br>
+1. 主題：仔細閱讀本段經文數次，以簡短扼要的一句話（最好不超過10 個字），來概括這段經文所要表達的內容。<br>
+2. 大意：用一段話描述段落經文的主要重點。<br>
+3. 分段大綱：將經文的各個重點以大綱的方式呈現。
+<br><br>
+建議步驟： 分段 ➡ 大意 ➡ 主題
+
+	<table>
+		<tbody><tr>
+			<td></td>
+			<td>敘事文</td>
+			<td>論述文</td>
+		</tr>
+		<tr>
+			<td>如何分段</td>
+			<td>寫出事件發生的「場景」、「經過（推展、高潮）」、「結果」， 據此加以分段</td>
+			<td>請先觀察每一節想要表達的意思/ 重點，並整理相近意思的經文，成為一個段落</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>找不到經文重點？ <br>
+1. 注意重複出現的字詞或概念<br>
+2. 注意對比和相對字詞<br>
+3. 注意事件的衝突點<br>
+4. 注意事件的結果
+</td>
+			<td>找不到經文重點？ <br>
+1. 注意重複出現的字詞或概念<br>
+2. 注意論述語句的轉折處( 論點會在這裡改變)、連接詞<br>
+3. 注意論述的結論<br>
+4. 注意主要動詞的改變
+</td>
+		</tr>
+		<tr>
+			<td>如何寫大意</td>
+			<td colspan="2">用一段話描述段落經文的主要重點</td>
+		</tr>
+		<tr>
+			<td>如何訂主題</td>
+			<td colspan="2">仔細閱讀本段經文數次，以簡短扼要的一句話（最好不超過10個字）， 來概括這段經文所要表達的內容。</td>
+		</tr>
+		<tr>
+			<td>觀察要訣</td>
+			<td colspan="2">從「寫作目的」掌握觀察的重點，例如： <br>
+1. 福音書作者是為了讓人認識耶穌，因此事件核心常常集中在耶穌的言行。書信作者可能是為了給予收信者一些重要觀念，或是幫助他們面對困難的處境。<br>
+2. 由「本段經文」到「上下文」：沒有一段經文是獨立存在的，需要從上下段落經文的整體意義，進一步了解經文的重點與含意，以免斷章取義。<br>
+3. 比較其他經文、事件和處境，來發現本段經文的特殊之處。
+</td>
+		</tr>
+	</tbody></table>
+	</div>
+
+	<div class="title_block title_05">
+		步驟二：解釋
+	</div>
+	<div class="text_basic">
+		<div class="title_second">
+			解釋的目的
+		</div>
+	
+		嘗試了解當時作者在經文中表達的原意，以及對當時讀者的可能意義。
+		<div class="title_second">
+			步驟一、提問
+		</div>
+		1. 如何提問？ <br>
+ 先整理「觀察」時所發現的問題<br>
+ 找出主要問題：與主題相關，避免枝微末節的問題<br>
+ 注意問題類別，以避免太多同類型問題<br>
+2. 檢查提問是否足夠廣泛<br>
+ 定義性問題：一段經文或字詞的主要意義。例如：「這個詞（或這句話）是什麼意思？」<br>
+ 關連性問題：兩者間（包含字、詞、句子、小段落）的差別、比較、對照等關係是什麼？ <br> 例如：「～與～之間有什麼關係？」<br>
+ 推理性問題：推理「經文人物」為什麼要這樣做，或是這樣說的理由？ <br>
+ 含意性問題：思索「作者」在這裡寫這些經文的原因？ <br>
+建議： 先問定義性問題，再問其他類型的問題<br>
+		<div class="title_second">
+			步驟二、回答問題
+		</div>
+	回答問題時可看上下文進行以下動作：<br>
+1. 了解字義<br>
+2. 對照其他中英文版本<br>
+3. 判斷文法與文體<br>
+4. 查閱平行經文<br>
+5. 參考相關經文<br>
+6. 進深探討背景<br>
+7. 合理的推理<br>
+8. 連結聖經的整體思想<br>
+9. 使用工具書：聖經字典、神學辭典、原文字彙中文彙編、各版本中英文聖經、中希英逐字對照新約聖經、聖經百科全書、聖經地圖等。
+		<div class="title_second">
+			解釋後的歸納
+		</div>
+		之前已經透過觀察、解釋深入經文的意思，了解作者想要表達什麼，現在要進行重點整理。
+		<div class="title_second">
+			一、重要性
+		</div>
+		提綱挈領：避免見樹不見林，避免陷入瑣碎細節，抓不到重點。<br>
+		傳遞信息：人的記憶有限，掌握重點才能讓人印象深刻。
+		<div class="title_second">
+			二、如何歸納
+		</div>
+		建議使用表格、圖表、條列方式進行<br><br>
+		敘事文：回答以下問題<br>
+ 在這段經文裡看到一位怎樣的神（父神、耶穌、聖靈）? <br>
+ 祂的本質、屬性<br>
+ 祂的作為、行事的法則<br>
+ 作者想要告訴讀者什麼？ <br>
+ 有什麼明顯的對比和反差嗎？ <br><br>
+
+論述文：回答以下問題<br>
+ 作者如何表達並且推展他的想法或論點？ <br>
+ 作者想要告訴讀者什麼？ <br>
+ 以自己的話整理出本段的重要概念<br>
+ 找出特殊題目，作分析歸納。例如：關於「罪」的理解
+	</div>
+	<div class="title_block title_06">
+		步驟三：應用
+	</div>
+	<div class="text_basic">
+		<div class="title_second">
+			應用的重要
+		</div>
+		研經之最終目的是要「回應」經文的信息<br>
+ 瞭解神在經文中的行動<br>
+ 瞭解神的行動對經文人物的影響<br>
+ 瞭解經文人物如何回應神<br>
+並從經文的處境中找到與我的「連結」點<br>
+ 看見神的行動/ 聖經人物 對我的意義<br>
+ 思考我要如何回應神<br>
+ 如何具體落實我所學習的
+
+	
+	<div class="title_second">
+		應用的建議
+	</div>
+	<table>
+		<tbody><tr>
+			<td></td>
+			<td>對神</td>
+			<td>對己</td>
+			<td>對人</td>
+		</tr>
+		<tr>
+			<td>信念<br>
+				我相信的事情
+			</td>
+			<td>我相信上帝是位憐憫人的主</td>
+			<td>我相信上帝會接納我的有限</td>
+			<td>我相信上帝會接納別人的有限</td>
+		</tr>
+		<tr>
+			<td>關係<br>
+				我與人或與神的關係
+			</td>
+			<td>即使得罪上帝， 也會願意回到上帝面前尋求幫助</td>
+			<td>即使不斷犯錯， 也不要給自己完全負面的評價</td>
+			<td>即使別人不斷犯錯，也要給別人機會去改變他自己</td>
+		</tr>
+		<tr>
+			<td>行為<br>
+				我會有的具體行動
+			</td>
+			<td>對上帝的行動會表現在對自己與對別人的行動中</td>
+			<td>讓自己成長或被修正的行動。例：每日持續讓經文修改自己對待人的方式</td>
+			<td>我願意參與在別人的生活中，與他一起接受挑戰</td>
+		</tr>
+	</tbody></table>
+	<div class="text_emphasize">
+		＊邀請大家配合影片進行觀察、解釋/歸納、應用的練習喔！
+	</div>
+	<a href="https://www.cef.tw/cefcamp/spage.php?camp_id=16&amp;page_id=672">
+		<button class="heading_to_video_button">前往影片</button>
+	</a>
+	</div>
+</div>
+
+
+<!-- fooer --><footer class="bible_16_footer"><div id="slot_531" style="position: relative"><div id="textblock_207"><div class="footer_block"><div class="footer_logo_block"><a href="#"><img alt="" src="%E5%A4%A7%E5%B0%88%E9%9D%88%E4%BF%AE%E7%8F%AD_%E8%AA%8D%E8%AD%98%E6%AD%B8%E7%B4%8D%E6%B3%95_files/2019_bibleclass_logotype-w.png"> </a></div><div class="footer_right_block"><div class="footer_link_block"><div class="footer_ul_title">推薦連結</div><ul class="footer_ul_s"><!--<li class="footer_li"><a href="#">大專靈修班APP</a></li>--><li class="footer_li"><a target="_blank" href="https://www.cef.tw/program/page.php?id=136&amp;gen_cache=1">校園福音團契</a></li></ul></div><div class="footer_connect_block"><div class="footer_connect_content"><div class="footer_ul_title">聯絡我們</div><ul class="footer_ul_s"><li class="footer_li">電話：(02)6604-2219</li><li class="footer_li"><a href="mailto:uc@cef.tw">E-mail：uc@cef.tw</a></li></ul></div><!--		
+		<div class="footer_connect_logolink">
+			<div class="footer_connect_logolink_img">
+				<a href="#">
+				<img src="/s_www/images/footer_connect_logolink_fb.png" alt="">
+				</a>
+			</div>
+			<div class="footer_connect_logolink_img">
+				<a href="#">
+				<img src="/s_www/images/footer_connect_logolink_yt.png" alt="">
+				</a>
+			</div>
+		</div>
+--></div><div class="footer_copyright_block">Copyright ©2018 Campus Evangelical Fellowship All Rights Reserved. ．校園福音團契 版權所有．</div></div></div></div></div></footer></div>
+</div>
+
+	<!-- 
+	<div class="app_switch">	
+		<div class="footer_container">
+			<div class="footer_block">
+				<div class="footer_logo_block">
+					<a href="/cefcamp/spage.php?camp_id=14&page_id=495">
+					<img src="https://www.cef.tw/s_ymc/images/ymc_Logo_footer.png" alt="">
+					</a>
+				</div>
+					
+				<div class="footer_right_block">
+
+					<div class="footer_link_block">
+						<div class="footer_ul_title">網站連結</div>
+						<div class="footer_ul">
+							<div class="footer_li"><a href="https://www.cef.tw/program/page.php?id=136&gen_cache=1" target="_blank">校園福音團契</a></div>
+						</div>
+					</div>
+					<div class="footer_connect_block">
+						<div class="footer_connect_content">
+							<div class="footer_ul_title">聯絡我們</div>
+							<div class="footer_ul">
+								<div class="footer_li"><a href="mailto:ymc@cef.tw">E-mail：ymc@cef.tw</a></div>
+					                <div class="footer_li">電話：(02)6604-2242</div>
+								<div class="footer_li">傳真：(02)2367-2139</div>
+							</div>
+						</div>
+						
+						<div class="footer_connect_logolink">
+							<div class="footer_connect_logolink_img">
+								<a href="https://www.facebook.com/ymcTW/?fref=ts" target="_blank">
+									<img src="https://www.cef.tw/s_www/images/footer_connect_logolink_fb.png" alt="">
+								</a>
+							</div>
+							<div class="footer_connect_logolink_img">
+								<a href="https://youtube.com/playlist?list=PLXcrU4Pq1LvS90R2llx0_4XSqzZxYFHYO" target="_blank">
+								<img src="https://www.cef.tw/s_www/images/footer_connect_logolink_yt.png" alt="">
+								</a>
+							</div>
+							<div class="footer_connect_logolink_img">
+								<a href="https://www.instagram.com/ymctw15/" target="_blank">
+								<img src="https://www.cef.tw/s_www/images/test_moudle/footer_connect_logolink_ig.png" alt="">
+								</a>
+				            </div>
+						</div>
+					</div>	
+
+					<div class="footer_support_subscribe">
+
+						<div class="eletter_subs_block p_subs_block footer_subscribe_block" data-eletterid="24">
+							<div class="footer_ul_title">訂閱青宣代禱信</div>
+							<div class="subs_block p_subs_block" data-eletterid="24">
+								<input class="subs_input p_subs_name" placeholder="請輸入您的姓名">
+								<input class="subs_input p_subs_email" placeholder="請輸入您的電子信箱" />
+								<button class="subs_btn p_subs_temp" data-eletterid="24" onclick="subscribeEletter(this, 24);">訂閱
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="footer_copyright">
+				Copyright ©2021 Campus Evangelical Fellowship All Rights Reserved.
+			    ．校園福音團契 版權所有．
+			</div>
+		</div>
+	</div>
+	-->
+	
+
+
+
+<!-- <a href="#top"><div class="backtotop"></div></a> -->
+<a href="#top"><div class="backtotop"></div></a>
+
+
+
+
+</body></html>

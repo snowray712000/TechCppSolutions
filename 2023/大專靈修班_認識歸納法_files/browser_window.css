@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===== Overlay =====*/
+
+.browser_overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10010;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.1);
+  }
+  
+  .overlay_content {
+    position: relative;
+    top: 25%;
+    width: 400px;
+    height: 180px;
+    margin: 30px auto;
+    background-color: #fff;
+    letter-spacing: normal;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  
+  
+  .browser_overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .browser_overlay a {font-size: 20px}
+    .browser_overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  .overlay_top{
+    display: block;
+    width: 100%;
+    padding: 15px 5% 5px 5%;
+    border-bottom: 1px solid #efefef;
+}
+
+
+.overlay_title{
+    display: block;
+    color: #777;
+    font-size: 0.9em;
+    /*float: left;*/
+    text-align: left;
+    word-wrap: break-word;
+}
+
+/*
+.button_close{
+    display: inline-block;
+    color: #444;
+    opacity: 0.6;
+    width: 15px;
+    float: right;
+    padding-top: 3px;
+  }
+  */
+
+
+.prompt_p{
+    width: 90%;
+    height: 45px;
+    border: #e0e0e0 1px solid;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    line-height: 1.6;
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 20px;
+    text-align: justify;
+}
+.confirm_p{
+    width: 100%;
+    padding: 20px;
+    line-height: 1.6;
+    color: #555;
+    font-size: 0.9em;
+    text-align: justify;
+}
+.browser_overlay input{
+    border: none;
+    -webkit-appearance: none;
+}
+.browser_button_block{
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    padding: 0 5%;
+
+}
+  /*
+  .button_close{
+    border: 1px solid #D80027;
+    color: #D80027;
+    font-size: 0.9em;
+    padding: 8px 20px;
+    border-radius: 50px;
+    margin-right: 4px;
+  }
+  .button_close:hover{
+    cursor: pointer;
+    background-color: #D80027;
+    color: #fff;
+  }
+  */
+  
+  .button_close:hover{
+    cursor: pointer;
+  }
+  /*
+  .button_confirm{
+    border: 1px solid #C4D600;
+    color: #C4D600;
+    font-size: 0.9em;
+    padding: 8px 20px;
+    border-radius: 50px;
+  }
+  .button_confirm:hover{
+    cursor: pointer;
+    background-color: #C4D600;
+    color: #fff;
+  }
+  */
+  .button_cancel{
+      
+  }
+  .button_confirm{
+
+  }
+  .window_button{
+    border: 1px solid #999;
+    color: #999;
+    font-size: 0.8em;
+    padding: 7px 20px;
+    border-radius: 50px;
+    margin-left: 3px;
+  }
+  .window_button:hover{
+    cursor: pointer;
+    background-color: #999;
+    color: #fff;
+  }
+
+
+
+/* --手機版型------------------------------------- */
+@media screen and (max-width: 767px) {
+
+  /*===== Overlay =====*/
+  
+  .overlay_content {
+    width: 90%;
+    }
+
+}
